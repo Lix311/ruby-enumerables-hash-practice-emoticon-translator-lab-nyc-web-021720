@@ -9,8 +9,9 @@ def load_library(file)
     emoticon_hash[:get_meaning][lan_ver[1]] = type
     emoticon_hash[:get_emoticon][lan_ver[0]] = lan_ver[1]
   end 
+  binding.pry 
   return emoticon_hash
-end
+  end
 
 def get_japanese_emoticon(file, emoticon)
    emoticon_library = load_library(file)
